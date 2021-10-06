@@ -1,25 +1,25 @@
+# Agradecimentos
 Essa é uma das primeiras contribuições minha 'Carlos Victor' pra comunidade SA-MP, é uma contribuição totalmente útil na vida dos programadores Mobile que não tem a função nativa /save que salva as coordenadas e algumas informações extras...
 
 Esse projeto visa evitar o máximo usar includes, sendo assim não é necessário include de salvamento apenas a include de processamento de comando ZCMD.
 
-A instalação é fácil, apenas extrai-a o arquivo .amx para pasta 'nome da sua gamemode/filterscript/savedposition.amx' e inclua 'savedposition' no arquivo server.cfg do seu gamemode.
-
-Existe apenas um comando simples porém útil pra muitos (/savepos) que irá salvar as coordenadas, skin, angulo, interior, virtualworld e um comentário dessa forma:
-Skin, PosX, PosY, PosZ, InteriorID, VirtualWorldID // Comentário (Opcional)
-
-Agradeço a todos por me ajudar, é o meu primeiro projeto/contribuição e peço perdão caso errei algo.
-
-
-
-Translation using Google Translator:
+========================================================================================
 
 This is one of the first contributions of my 'Carlos Victor' to the SA-MP community, it's a totally useful contribution in the lives of Mobile programmers that doesn't have the native /save function that saves coordinates and some extra information...
 
 This project aims to avoid as much as possible using includes, so it is not necessary to save include only the ZCMD command processing include.
 
-Installation is easy, just extract it from the .amx file to 'your gamemode/filterscript/savedposition.amx' folder and include 'savedposition' in your gamemode's server.cfg file.
+# Instalação / Dowload
 
-There is only one simple but useful command for many (/savepos) that will save the coordinates, skin, angle, interior, virtualworld and a comment like that:
-Skin, PosX, PosY, PosZ, InteriorID, VirtualWorldID // Comment (Optional)
+1. Clique no botão verde escrito "code" e selecione "Dowload ZIP", aguarde instalar.
 
-Thanks to everyone for helping me, it's my first project/contribution and I apologize if I went wrong.
+![image1](https://media.discordapp.net/attachments/817084535459414050/895388879232839730/unknown.png)
+
+2. Extraia o arquivo "filterscripts" para pasta raíz da sua gamemode.
+
+![image2](https://media.discordapp.net/attachments/895389417777274890/895390284530204712/unknown.png)
+
+3. Inclua o nome do arquivo .amx no server.cfg.
+
+![image3](https://media.discordapp.net/attachments/895389417777274890/895390746025279549/unknown.png)
+
