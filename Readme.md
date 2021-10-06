@@ -3,7 +3,7 @@ Essa é uma das primeiras contribuições minha 'Carlos Victor' pra comunidade S
 
 Esse projeto visa evitar o máximo usar includes, sendo assim não é necessário include de salvamento apenas a include de processamento de comando ZCMD.
 
-========================================================================================
+=======================================
 
 This is one of the first contributions of my 'Carlos Victor' to the SA-MP community, it's a totally useful contribution in the lives of Mobile programmers that doesn't have the native /save function that saves coordinates and some extra information...
 
