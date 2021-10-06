@@ -9,6 +9,8 @@ This is one of the first contributions of my 'Carlos Victor' to the SA-MP commun
 
 This project aims to avoid as much as possible using includes, so it is not necessary to save include only the ZCMD command processing include.
 
+Command: /savepos [Comment (Optional)]
+
 # Instalação / Dowload
 
 1. Clique no botão verde escrito "code" e selecione "Dowload ZIP", aguarde instalar.
