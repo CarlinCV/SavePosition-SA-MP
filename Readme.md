@@ -5,7 +5,7 @@
 
 1. Clique no botão verde escrito "code" e selecione "Dowload ZIP", aguarde instalar.
 
-![image1](https://media.discordapp.net/attachments/817084535459414050/895388879232839730/unknown.png)
+![image1](https://media.discordapp.net/attachments/895389417777274890/895389510853099582/unknown.png)
 
 2. Extraia o arquivo "filterscripts" para pasta raíz da sua gamemode.
 
