@@ -1,5 +1,7 @@
-#### Comando: /savepos [Comentário (Opcional)]
-#### Command: /savepos [Comment (Optional)]
+## Comandos:
+Comando: /savepos [Comentário (Opcional)]
+
+Command: /savepos [Comment (Optional)]
 
 # Instalação / Dowload
 
