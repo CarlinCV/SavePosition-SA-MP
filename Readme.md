@@ -19,8 +19,8 @@ E pronto, ao ser instalado verifica no 'server-log.txt' se foi iniciado com suce
 ### Comando para salvar posições: /savepos [Comentário (Opcional)]
 Exemplo: /savepos Checkpoint 1 | /savepos
 
-### A syntax de salvamento é simples:
-SkinID, PosX, PosY, PosZ, PosAngle, InteriorID, VirtualWorldID
+### Syntax de salvamento é simples.
+SkinID, PosX, PosY, PosZ, Angle, InteriorID, VirtualWorldID //Comentário
 
-### Segue a mesma lógica para veículos:
-VehicleID, PosX, PosY, PosZ, PosAngle, InteriorID, VirtualWorldID
+VehicleID, PosX, PosY, PosZ, Angle, InteriorID, VirtualWorldID //Comentário
+![image](https://user-images.githubusercontent.com/91024125/139883387-33e97f63-63cc-4c99-8ac0-a5a1054fc219.png)
