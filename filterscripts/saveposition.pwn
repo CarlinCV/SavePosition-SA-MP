@@ -26,13 +26,12 @@
 #define FILTERSCRIPT
 #include <open.mp>
 
-
 // YSI Includes - nightly build. - https://github.com/pawn-lang/YSI-Includes/releases/tag/nightly
 #define YSI_NO_CACHE_MESSAGE
 #define YSI_NO_OPTIMISATION_MESSAGE
 #define YSI_NO_HEAP_MALLOC
 
-#include <YSI_Visual\y_commands>
+#include <YSI_Visual\y_commands> // y_commands necessita de toda a include do YSI, então importe toda a include no seu projeto.
 
 #if !defined isnull
     #define isnull(%1) ((!(%1[0])) || (((%1[0]) == '\1') && (!(%1[1]))))
@@ -64,7 +63,7 @@ main(){
 			fwrite(log, String);
 			fclose(log);
 
-			SendClientMessage(playerid, 0x88AA62AA, "[SavePosition] Vehicle coords were saved!");
+			SendClientMessage(playerid, 0x88AA62AA, "[SavePosition] As coordenadas do veículo foram salvas!");
 			return 1;
 		}
 
@@ -86,7 +85,7 @@ main(){
 			fwrite(log, String);
 			fclose(log);
 
-			SendClientMessage(playerid, 0x88AA62AA, "[SavePosition] Vehicle coords were saved!");
+			SendClientMessage(playerid, 0x88AA62AA, "[SavePosition] As coordenadas do veículo foram salvas!");
 			return 1;
 		}
 
@@ -96,7 +95,7 @@ main(){
 		fclose(log);
 	}
 
-	SendClientMessage(playerid, 0x88AA62AA, "[SavePosition] Player coordinates on foot were saved!");
+	SendClientMessage(playerid, 0x88AA62AA, "[SavePosition] As coordenadas a pé foram salvas!);
 	return 1;
 }
 
