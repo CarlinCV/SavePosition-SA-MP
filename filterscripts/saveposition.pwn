@@ -1,30 +1,42 @@
 /*
-		Filterscript criada por Carlos Victor - 06/10/2021
+	Filterscript criada por Carlos Victor - 06/10/2021
 
-			Filterscript atualizado - 11/10/2021
-			Update:
-			Foi adicionado /savepos em veículos.
+	Filterscript atualizado - 21/03/2023
+	Update:
+	Foi adicionado /savepos em veículos. - 11/10/2021 - CarlosCV
+	Transferido para open.mp - 21/03/2023 - pushline
 
-Comandos:
-/savepos [Comentário (Opcional) ]
+	Comandos:
+	/savepos [Comentário (Opcional)]
 
-Syntax:
+	Syntax:
 
-A pé:
-SkinID, PosX, PosY, PosZ, Angle, InteriorID, VirtualWorldID //Comentário
+	A pé:
+	SkinID, PosX, PosY, PosZ, Angle, InteriorID, VirtualWorldID // Comentário
 
-Em veículo:
-VehID, PosX, PosY, PosZ, Angle, InteriorId, VehicleVirutlaWorld //Comentário
+	Em veículo:
+	VehID, PosX, PosY, PosZ, Angle, InteriorId, VehicleVirtualWorld // Comentário
 
-GitHub: https://github.com/CarlinCV/SavePosition-SA-MP
-Fórum: https://portalsamp.com/showthread.php?tid=1684
+	GitHub: https://github.com/CarlinCV/SavePosition-SA-MP
+	Fórum: https://portalsamp.com/showthread.php?tid=1684
 
 */
 
+// open.mp
 #define FILTERSCRIPT
+#include <open.mp>
 
-#include <a_samp>
-#include <zcmd>
+
+// YSI Includes - nightly build. - https://github.com/pawn-lang/YSI-Includes/releases/tag/nightly
+#define YSI_NO_CACHE_MESSAGE
+#define YSI_NO_OPTIMISATION_MESSAGE
+#define YSI_NO_HEAP_MALLOC
+
+#include <YSI_Visual\y_commands>
+
+#if !defined isnull
+    #define isnull(%1) ((!(%1[0])) || (((%1[0]) == '\1') && (!(%1[1]))))
+#endif
 
 #if defined FILTERSCRIPT
 
@@ -32,7 +44,7 @@ main(){
 	print("[SavePosition] Carregado com sucesso!");
 }
 
-CMD:savepos(playerid, params[])
+@cmd() savepos(playerid, params[], help)
 {
 	new Float:P[4], Float:V[4], String[256];
 	GetPlayerPos(playerid, P[0], P[1], P[2]);
@@ -52,7 +64,7 @@ CMD:savepos(playerid, params[])
 			fwrite(log, String);
 			fclose(log);
 
-			SendClientMessage(playerid, 0x88AA62AA, "[SavePosition] As coordenadas do veiculo foram salvadas!");
+			SendClientMessage(playerid, 0x88AA62AA, "[SavePosition] Vehicle coords were saved!");
 			return 1;
 		}
 
@@ -74,7 +86,7 @@ CMD:savepos(playerid, params[])
 			fwrite(log, String);
 			fclose(log);
 
-			SendClientMessage(playerid, 0x88AA62AA, "[SavePosition] As coordenadas do veiculo foram salvadas!");
+			SendClientMessage(playerid, 0x88AA62AA, "[SavePosition] Vehicle coords were saved!");
 			return 1;
 		}
 
@@ -84,7 +96,7 @@ CMD:savepos(playerid, params[])
 		fclose(log);
 	}
 
-	SendClientMessage(playerid, 0x88AA62AA, "[SavePosition] As coordenadas a pe foram salvadas!");
+	SendClientMessage(playerid, 0x88AA62AA, "[SavePosition] Player coordinates on foot were saved!");
 	return 1;
 }
 
